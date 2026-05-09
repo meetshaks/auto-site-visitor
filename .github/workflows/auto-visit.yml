@@ -1,0 +1,22 @@
+name: Auto Site Visitor
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # প্রতি ঘণ্টায় একবার চলবে
+  workflow_dispatch:       # Manual চালানোর option
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Run visitor script
+        run: python visit.py
