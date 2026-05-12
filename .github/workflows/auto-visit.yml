@@ -2,7 +2,7 @@ name: Auto Site Visitor
 
 on:
   schedule:
-    - cron: "0 * * * *"  # প্রতি ঘণ্টায় একবার চলবে
+    - cron: "0 */12 * * *"  # 12 ঘণ্টায় একবার চলবে
   workflow_dispatch:       # Manual চালানোর option
 
 jobs:
