@@ -3,7 +3,7 @@ import datetime
 
 # 👇 তোমার URLs এখানে যোগ করো
 URLS = [
-    "http://atnghs.rf.gd/ping.php",
+    "https://atnghs.gt.tc/ping.php",
 ]
 
 def visit_url(url):
